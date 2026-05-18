@@ -34,10 +34,21 @@
 | 구분 | GitHub | 배포 |
 | --- | --- | --- |
 | 공개 포트폴리오 README | [2025-SMHRD-IS-EdgeAI-2/mdts_maritime_medic](https://github.com/2025-SMHRD-IS-EdgeAI-2/mdts_maritime_medic) | - |
-| MDTS 통합 데모 | [Capernaum-user/mdts-maritime-medic-integrated-demo](https://github.com/Capernaum-user/mdts-maritime-medic-integrated-demo) | [frontendaibackend.vercel.app](https://frontendaibackend.vercel.app) |
-| MDTS 웹 대시보드 | [eelishalee/-maritime-medic](https://github.com/eelishalee/-maritime-medic) | [maritime-medic-five.vercel.app](https://maritime-medic-five.vercel.app) |
+| MDTS 통합 데모(DB/API 연동) | [Capernaum-user/mdts-maritime-medic-integrated-demo](https://github.com/Capernaum-user/mdts-maritime-medic-integrated-demo) | [frontendaibackend.vercel.app](https://frontendaibackend.vercel.app) |
+| MDTS 웹 대시보드(DB 미연결 UI 확인용) | [eelishalee/-maritime-medic](https://github.com/eelishalee/-maritime-medic) | [maritime-medic-five.vercel.app](https://maritime-medic-five.vercel.app) |
 
 > 참고: `Capernaum-user/mdts-maritime-medic-integrated-demo`는 Private 저장소이므로 GitHub 코드 열람에는 권한이 필요합니다. 배포 링크는 브라우저에서 확인할 수 있습니다.
+
+## DB 미연결 웹 대시보드 확인용
+
+| 항목 | 내용 |
+| --- | --- |
+| 확인 링크 | [https://maritime-medic-five.vercel.app/](https://maritime-medic-five.vercel.app/) |
+| 목적 | DB 연결 없이 MDTS 웹 대시보드의 화면 구성, 메뉴 흐름, 환자/선원 UI, 응급처치 화면을 확인하는 시연용 버전 |
+| 특징 | 실제 DB 조회 없이 프론트엔드 화면 중심으로 구성되어 외부 팀원이 별도 계정이나 DB 접속 없이 확인 가능 |
+| 확인 대상 | 로그인, 메인 대시보드, 선원 관리, 환자 차트, 응급처치, AI 분석 진입 화면 |
+
+이 버전은 데이터 연동 기능을 평가하기 위한 배포가 아니라, MDTS 웹 대시보드가 어떤 구조와 화면 흐름으로 표현되는지 보여주는 UI 공유용 배포본이다.
 
 ## 기술스택
 
