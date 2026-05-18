@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=5 -o BatchMode=no pi@YOUR_RPI_HOST echo \"CONNECTED\")",
+      "Bash(python:*)",
+      "Bash(ssh:*)",
+      "Bash(sshpass:*)",
+      "Bash(where plink:*)",
+      "Bash(where putty:*)",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/smhrd1/AppData/Local/Programs//**)",
+      "Bash(pip show:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(where python:*)",
+      "Bash(pip install:*)",
+      "Bash(pip list:*)",
+      "Bash(fc-list)",
+      "Read(//c/Windows/Fonts/**)",
+      "Read(//c/Users/smhrd1/AppData/Local/Microsoft/Windows/Fonts/**)",
+      "Bash(taskkill //F //IM python.exe)",
+      "Bash(scp:*)",
+      "Bash(choco list:*)",
+      "Bash(xargs cat:*)",
+      "Bash(gh repo:*)",
+      "Bash(git clone:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)"
+    ]
+  }
+}

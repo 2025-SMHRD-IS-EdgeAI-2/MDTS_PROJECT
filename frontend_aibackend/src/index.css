@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navy-950: #050d1a;
+  --navy-900: #0a1628;
+  --navy-800: #0f2040;
+  --navy-700: #162b55;
+  --navy-600: #1e3a6e;
+  --navy-500: #2a4d8a;
+  --teal-400: #0dd9c5;
+  --teal-300: #3de8d6;
+  --teal-200: #7ef5ec;
+  --teal-500: #09b8a6;
+  --red-400: #ff4d6d;
+  --red-300: #ff6b84;
+  --orange-400: #ff9f43;
+  --green-400: #26de81;
+  --blue-400: #4fc3f7;
+  --text-primary: #e8f0fe;
+  --text-secondary: #8da2c0;
+  --text-muted: #4a6080;
+  --border: rgba(13, 217, 197, 0.12);
+  --border-hover: rgba(13, 217, 197, 0.3);
+  --card-bg: rgba(15, 32, 64, 0.7);
+  --card-bg-solid: #0f2040;
+  --glass: rgba(10, 22, 40, 0.85);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--navy-900);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  height: 100vh;
+  font-size: 16px;
+  cursor: default; /* 기본 마우스 포인터 고정 */
+}
+
+/* 입력 필드를 제외한 모든 곳에서 텍스트 커서(캐럿) 숨김 */
+* {
+  caret-color: transparent;
+}
+
+/* 실제 입력이 필요한 곳에서만 커서와 깜빡임 허용 */
+input, textarea, [contenteditable="true"] {
+  caret-color: auto;
+  cursor: text;
+}
+
+/* 버튼 및 링크는 포인터 모양 유지 */
+button, a, [role="button"], .cursor-pointer {
+  cursor: pointer;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar { 
+  width: 10px; 
+  height: 10px; 
+}
+::-webkit-scrollbar-track { 
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb { 
+  background: rgba(13, 217, 197, 0.3); /* 테일 색상 반투명 */
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover { 
+  background: rgba(13, 217, 197, 0.6); 
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(13, 217, 197, 0.3) transparent;
+}
+
+/* Animations */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes imgSlideIn {
+  from { opacity: 0; transform: translateX(40px) scale(1.03); }
+  to   { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+@keyframes imgSlideInLeft {
+  from { opacity: 0; transform: translateX(-40px) scale(1.03); }
+  to   { opacity: 1; transform: translateX(0) scale(1); }
+}
+
+/* 스텝 아이콘 애니메이션들 */
+@keyframes stepPulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.25); }
+}
+@keyframes stepBounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+@keyframes stepBreathe {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.15); opacity: 0.7; }
+}
+@keyframes stepShake {
+  0%, 100% { transform: rotate(0deg); }
+  25%       { transform: rotate(-8deg); }
+  75%       { transform: rotate(8deg); }
+}
+@keyframes stepFlash {
+  0%, 100% { opacity: 1; filter: brightness(1); }
+  50%       { opacity: 0.4; filter: brightness(2); }
+}
+@keyframes stepFadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.fade-in { animation: fadeInUp 0.35s ease both; }
